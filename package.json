@@ -23,6 +23,7 @@
   "homepage": "https://github.com/justapps4all/github-jsonp#readme",
   "devDependencies": {
     "jasmine-node": "^1.14.5",
+    "karma-sauce-launcher": "^1.0.0",
     "requirejs": "^2.2.0"
   }
 }
