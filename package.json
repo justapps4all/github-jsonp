@@ -1,0 +1,27 @@
+{
+  "name": "github-jsonp",
+  "version": "0.1.0",
+  "description": "GitHub minimal library with JSONP",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justapps4all/github-jsonp.git"
+  },
+  "keywords": [
+    "github",
+    "jsonp",
+    "api"
+  ],
+  "author": "Juanma <juanma@justapps4all.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justapps4all/github-jsonp/issues"
+  },
+  "homepage": "https://github.com/justapps4all/github-jsonp#readme",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}

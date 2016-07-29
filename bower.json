@@ -1,0 +1,26 @@
+{
+  "name": "github-jsonp",
+  "description": "GitHub minimal library with JSONP",
+  "main": [
+    "js/main.js"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "github",
+    "jsonp",
+    "api"
+  ],
+  "authors": [
+    "Juanma <juanma@justapps4all.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
