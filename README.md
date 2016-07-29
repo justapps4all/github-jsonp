@@ -1,0 +1,1 @@
+GitHub minimal library with JSONP
