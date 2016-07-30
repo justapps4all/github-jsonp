@@ -5,4 +5,3 @@ GitHub minimal library with JSONP
 
 #COMPATIBILITY
 ![compatibility matrix](https://saucelabs.com/browser-matrix/juanmadev.svg?TIMESTAMP)
-
