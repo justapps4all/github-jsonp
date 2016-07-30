@@ -1,5 +1,5 @@
 var fs = require('fs');
-var fs = require('underscore');
+var _ = require('underscore');
 
 module.exports = function(config) {
 
