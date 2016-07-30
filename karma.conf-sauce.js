@@ -1,4 +1,5 @@
 var fs = require('fs');
+var fs = require('underscore');
 
 module.exports = function(config) {
 
@@ -14,21 +15,54 @@ module.exports = function(config) {
     }
 
     // Browsers to run on Sauce Labs
-    var customLaunchers = {
-        'SL_Chrome': {
-            base: 'SauceLabs',
-            browserName: 'chrome'
-        },
-        'SL_InternetExplorer': {
-            base: 'SauceLabs',
-            browserName: 'internet explorer',
-            version: '10'
-        },
-        'SL_FireFox': {
-            base: 'SauceLabs',
-            browserName: 'firefox',
+    var customLaunchers = _.reduce([
+        ['firefox', '35'],
+        ['firefox', '30'],
+        ['firefox', '21'],
+        ['firefox', '11'],
+        ['firefox', '4'],
+
+        ['chrome', '40'],
+        ['chrome', '39'],
+        ['chrome', '31'],
+        ['chrome', '26'],
+
+        ['microsoftedge', '20.10240', 'Windows 10'],
+        ['internet explorer', '11', 'Windows 10'],
+        ['internet explorer', '10', 'Windows 8'],
+        ['internet explorer', '9', 'Windows 7'],
+        // Currently disabled due to karma-sauce issues
+        // ['internet explorer', '8'],
+        // ['internet explorer', '7'],
+        // ['internet explorer', '6'],
+
+        ['opera', '12'],
+        ['opera', '11'],
+
+        ['android', '5'],
+        ['android', '4.4'],
+        ['android', '4.3'],
+        ['android', '4.0'],
+
+        ['safari', '8.0', 'OS X 10.10'],
+        ['safari', '7'],
+        ['safari', '6'],
+        ['safari', '5']
+    ], function(memo, platform) {
+        // internet explorer -> ie
+        var label = platform[0].split(' ');
+        if (label.length > 1) {
+            label = _.invoke(label, 'charAt', 0)
         }
-    };
+        label = (label.join("") + '_v' + platform[1]).replace(' ', '_').toUpperCase();
+        memo[label] = _.pick({
+            'base': 'SauceLabs',
+            'browserName': platform[0],
+            'version': platform[1],
+            'platform': platform[2]
+        }, Boolean);
+        return memo;
+    }, {});
 
     config.set({
 
@@ -77,10 +111,3 @@ module.exports = function(config) {
         singleRun: true
     });
 };
-
-/*
- sauceLabs: {
- testName: 'Karma and Sauce Labs demo'
- },
-
- */
