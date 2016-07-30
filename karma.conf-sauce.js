@@ -34,9 +34,10 @@ module.exports = function(config) {
         ['internet explorer', '10', 'Windows 8'],
         ['internet explorer', '9', 'Windows 7'],
         // Currently disabled due to karma-sauce issues
-        // ['internet explorer', '8'],
-        // ['internet explorer', '7'],
-        // ['internet explorer', '6'],
+        ['internet explorer', '8'],
+        ['internet explorer', '7'],
+        ['internet explorer', '6'],
+
 
         ['opera', '12'],
         ['opera', '11'],
@@ -48,14 +49,14 @@ module.exports = function(config) {
         ['android', '4.0'],
 
         ['safari', '8.0', 'OS X 10.10'],
-        ['safari', '7'],
-        ['safari', '6'],
-        ['safari', '5'],
+        ['safari', '7', 'OS X 10.10'],
+        ['safari', '6', 'OS X 10.10'],
+        ['safari', '5', 'OS X 10.10'],
 
-        ['iOS', '9.3', 'iPhone Simulator'],
-        ['iOS', '9.2', 'iPhone Simulator'],
-        ['iOS', '9.1', 'iPhone Simulator'],
-        ['iOS', '9.0', 'iPhone Simulator']
+        ['iphone', '9.3', 'OS X 10.10'],
+        ['iphone', '9.2', 'OS X 10.10'],
+        ['iphone', '9.1', 'OS X 10.10'],
+        ['iphone', '9.0', 'OS X 10.10']
     ], function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
