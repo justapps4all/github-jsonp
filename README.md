@@ -5,4 +5,3 @@
 
 GitHub minimal library with JSONP
 
-http://samsaccone.com/posts/testing-with-travis-and-sauce-labs.html
