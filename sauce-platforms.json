@@ -2,6 +2,6 @@
   "ios_9_3": [
     ["firefox", "46"],
     ["firefox", "47"],
-    ["iPad 2 Simulator", "9.3", "OS X 10.10"]
+    ["Safari", "9.3", "iOS", "iPad 2 Simulator"]
   ]
 }
