@@ -12,10 +12,9 @@ gulp.task('replace', function(){
         .pipe(gulp.dest('./'));
 });
 
-var timeStamp = Date.now();
 gulp.task('templates', function(){
     gulp.src(['README.md'])
-        .pipe(replace('TIMESTAMP', timeStamp))
+        .pipe(replace('TIMESTAMP', Date.now()))
         .pipe(gulp.dest('./'));
 });
 
