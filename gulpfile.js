@@ -7,7 +7,7 @@ var git = require('gulp-git');
 gulp.task('templates', function(){
     gulp.src(['README.tmp.md'])
         .pipe(replace('TIMESTAMP', Date()))
-        .pipe(gulp.dest('./README.md'));
+        .pipe(gulp.dest('./src/../README.md'));
 });
 
 gulp.task('commit-changes', function () {
