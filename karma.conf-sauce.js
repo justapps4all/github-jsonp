@@ -34,9 +34,9 @@ module.exports = function(config) {
         ['internet explorer', '10', 'Windows 8'],
         ['internet explorer', '9', 'Windows 7'],
         // Currently disabled due to karma-sauce issues
-        ['internet explorer', '8'],
-        ['internet explorer', '7'],
-        ['internet explorer', '6'],
+        //['internet explorer', '8'],
+        //['internet explorer', '7'],
+        //['internet explorer', '6'],
 
 
         ['opera', '12'],
