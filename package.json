@@ -7,7 +7,7 @@
     "test": "karma start karma.conf-sauce.js",
     "previous-test": "./node_modules/.bin/jasmine-node ./test",
     "postinstall": "node sauce-install.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls-xxx": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
