@@ -4,4 +4,5 @@
 GitHub minimal library with JSONP
 
 #COMPATIBILITY
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/juanmadev.svg)](https://saucelabs.com/u/juanmadev)
+![compatibility matrix](https://saucelabs.com/browser-matrix/juanmadev.svg)
+
