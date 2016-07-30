@@ -15,9 +15,9 @@ module.exports = function(config) {
     }
 
     var tmpPlatforms = [
-        ['firefox', '47']
+        ['firefox', '46']
     ];
-    //tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
+    tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
 
     // Browsers to run on Sauce Labs
     var customLaunchers = _.reduce(tmpPlatforms
