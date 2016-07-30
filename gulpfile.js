@@ -12,16 +12,17 @@ gulp.task('replace', function(){
         .pipe(gulp.dest('./'));
 });
 
+var timeStamp = Date.now();
 gulp.task('templates', function(){
     gulp.src(['README.md'])
-        .pipe(replace('TIMESTAMP', 'time'))
+        .pipe(replace('TIMESTAMP', timeStamp))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('commit-changes', function () {
     return gulp.src('.')
         .pipe(git.add())
-        .pipe(git.commit((new Date).toUTCString()));
+        .pipe(git.commit((new Date()).toUTCString()));
 });
 
 gulp.task('push-changes', function (cb) {
