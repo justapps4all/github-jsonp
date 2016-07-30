@@ -2,12 +2,19 @@ var gulp = require('gulp');
 var replace = require('gulp-replace');
 var runSequence = require('run-sequence');
 var git = require('gulp-git');
+var rename = require('gulp-rename');
 
-
+gulp.task('default', function() {
+    return gulp.watch('../**/**.js', function(obj) {
+        gulp.src(['README.tmp.md'])
+            .pipe(rename('README.md'))
+            .pipe(gulp.dest('.'));
+    });
+});
 gulp.task('templates', function(){
-    gulp.src(['README.tmp.md'])
+    gulp.src(['README.md'])
         .pipe(replace('TIMESTAMP', Date()))
-        .pipe(gulp.dest('./src/../README.md'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('commit-changes', function () {
