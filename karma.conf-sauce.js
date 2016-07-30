@@ -16,14 +16,16 @@ module.exports = function(config) {
 
     // Browsers to run on Sauce Labs
     var customLaunchers = _.reduce([
+        ['firefox', '47'],
+        ['firefox', '46'],
         ['firefox', '35'],
         ['firefox', '30'],
         ['firefox', '21'],
         ['firefox', '11'],
         ['firefox', '4'],
 
-        ['chrome', '40'],
-        ['chrome', '39'],
+        ['chrome', '51'],
+        ['chrome', '50'],
         ['chrome', '31'],
         ['chrome', '26'],
 
@@ -39,7 +41,8 @@ module.exports = function(config) {
         ['opera', '12'],
         ['opera', '11'],
 
-        ['android', '5'],
+        ['android', '5.1'],
+        ['android', '5.0'],
         ['android', '4.4'],
         ['android', '4.3'],
         ['android', '4.0'],
@@ -48,6 +51,11 @@ module.exports = function(config) {
         ['safari', '7'],
         ['safari', '6'],
         ['safari', '5']
+
+        ['ios', '9.3'],
+        ['ios', '9.2'],
+        ['ios', '9.1'],
+        ['ios', '9.0']
     ], function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
