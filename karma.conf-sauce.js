@@ -18,8 +18,8 @@ module.exports = function(config) {
     tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
 
     // Browsers to run on Sauce Labs
-    var customLaunchers = _.reduce( tmpPlatforms
-/*    [
+    var customLaunchers = _.reduce(
+   [
         ['firefox', '47'],
         ['firefox', '46'],
         ['firefox', '35'],
@@ -61,7 +61,7 @@ module.exports = function(config) {
         ['iphone', '9.2', 'OS X 10.10'],
         ['iphone', '9.1', 'OS X 10.10'],
         ['iphone', '9.0', 'OS X 10.10']
-    ] */
+    ]
     , function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
