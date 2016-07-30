@@ -52,10 +52,10 @@ module.exports = function(config) {
         ['safari', '6'],
         ['safari', '5'],
 
-        ['ios', '9.3'],
-        ['ios', '9.2'],
-        ['ios', '9.1'],
-        ['ios', '9.0']
+        ['iOS', '9.3', 'iPhone Simulator'],
+        ['iOS', '9.2', 'iPhone Simulator'],
+        ['iOS', '9.1', 'iPhone Simulator'],
+        ['iOS', '9.0', 'iPhone Simulator']
     ], function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
