@@ -7,7 +7,7 @@
     "test": "karma start karma.conf-sauce.js",
     "previous-test": "./node_modules/.bin/jasmine-node ./test",
     "postinstall": "node sauce-install.js",
-    "coverage": "./node_modules/istanbul/lib/cli cover _jasmine test/index.js",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover src/**.js",
     "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info",
     "cover": "istanbul cover _jasmine"
   },
