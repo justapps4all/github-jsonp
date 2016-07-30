@@ -1,0 +1,174 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'coverage' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/package.json
+6 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coveralls/package.json
+7 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp-copy/package.json
+9 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp-git/package.json
+10 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp-rename/package.json
+11 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp-replace/package.json
+12 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/gulp-sequence/package.json
+13 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/jasmine-node/package.json
+14 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma/package.json
+15 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-chrome-launcher/package.json
+16 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-coverage/package.json
+17 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-firefox-launcher/package.json
+18 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-jasmine/package.json
+19 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-safari-launcher/package.json
+20 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/karma-sauce-launcher/package.json
+21 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/requirejs/package.json
+22 verbose installManyTop reading scoped package data from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/run-sequence/package.json
+23 info package.json gulp-copy@0.0.2 No license field.
+24 info package.json gulp-rename@1.2.2 No license field.
+25 info package.json gulp-sequence@0.4.5 No license field.
+26 info package.json jasmine-node@1.14.5 No license field.
+27 verbose readDependencies loading dependencies from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/package.json
+28 silly cache add args [ 'coverage', null ]
+29 verbose cache add spec coverage
+30 silly cache add parsed spec { raw: 'coverage',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'coverage',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: '*',
+30 silly cache add   type: 'range' }
+31 silly addNamed coverage@*
+32 verbose addNamed "*" is a valid semver range for coverage
+33 silly addNameRange { name: 'coverage', range: '*', hasData: false }
+34 silly mapToRegistry name coverage
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/coverage
+38 verbose addNameRange registry:https://registry.npmjs.org/coverage not in flight; fetching
+39 verbose request uri https://registry.npmjs.org/coverage
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 10:56:23 PM
+42 verbose request id 457c21555f49e4e4
+43 http request GET https://registry.npmjs.org/coverage
+44 http 200 https://registry.npmjs.org/coverage
+45 silly get cb [ 200,
+45 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+45 silly get     etag: '"1USJZV69MUWKRV51YCLAJM1Z0"',
+45 silly get     'content-type': 'application/json',
+45 silly get     'content-encoding': 'gzip',
+45 silly get     'cache-control': 'max-age=300',
+45 silly get     'content-length': '572',
+45 silly get     'accept-ranges': 'bytes',
+45 silly get     date: 'Sat, 30 Jul 2016 20:56:26 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     age: '0',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-lcy1131-LCY',
+45 silly get     'x-cache': 'MISS',
+45 silly get     'x-cache-hits': '0',
+45 silly get     'x-timer': 'S1469912185.753977,VS0,VE352',
+45 silly get     vary: 'Accept-Encoding' } ]
+46 verbose get saving coverage to /Users/juanmasn/.npm/registry.npmjs.org/coverage/.cache.json
+47 silly addNameRange number 2 { name: 'coverage', range: '*', hasData: true }
+48 silly addNameRange versions [ 'coverage', [ '0.0.0' ] ]
+49 silly addNamed coverage@0.0.0
+50 verbose addNamed "0.0.0" is a plain semver version for coverage
+51 silly mapToRegistry name coverage
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/coverage
+55 verbose addRemoteTarball https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz',
+56 verbose addRemoteTarball   'fe35dfd6258e2cce0295e37145e689ae7f156620' ]
+57 info retry fetch attempt 1 at 10:56:25 PM
+58 info attempt registry request try #1 at 10:56:25 PM
+59 http fetch GET https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz
+60 http fetch 200 https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz
+61 silly fetchAndShaCheck shasum fe35dfd6258e2cce0295e37145e689ae7f156620
+62 verbose addTmpTarball /var/folders/w7/6_8zpp3x33g0710c3xzq2vl40000gn/T/npm-15226-06d62620/registry.npmjs.org/coverage/-/coverage-0.0.0.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for coverage@0.0.0
+64 silly cache afterAdd coverage@0.0.0
+65 verbose afterAdd /Users/juanmasn/.npm/coverage/0.0.0/package/package.json not in flight; writing
+66 verbose afterAdd /Users/juanmasn/.npm/coverage/0.0.0/package/package.json written
+67 silly install resolved [ { name: 'coverage',
+67 silly install resolved     description: 'Test coverage analyzer for Node.js binary addons',
+67 silly install resolved     version: '0.0.0',
+67 silly install resolved     maintainers: [ [Object] ],
+67 silly install resolved     contributors: [ [Object] ],
+67 silly install resolved     bugs: { web: 'http://github.com/Sannis/nodecoverage/issues' },
+67 silly install resolved     licenses: [ [Object] ],
+67 silly install resolved     repositories: [ [Object] ],
+67 silly install resolved     bin: { nodecoverage: './bin/nodecoverage' },
+67 silly install resolved     engines: { node: '>=0.2.3' },
+67 silly install resolved     _id: 'coverage@0.0.0',
+67 silly install resolved     _nodeSupported: true,
+67 silly install resolved     _npmVersion: '0.2.7-2',
+67 silly install resolved     _nodeVersion: 'v0.3.1-pre',
+67 silly install resolved     dist:
+67 silly install resolved      { tarball: 'https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz',
+67 silly install resolved        shasum: 'fe35dfd6258e2cce0295e37145e689ae7f156620' },
+67 silly install resolved     directories: {},
+67 silly install resolved     _shasum: 'fe35dfd6258e2cce0295e37145e689ae7f156620',
+67 silly install resolved     _resolved: 'https://registry.npmjs.org/coverage/-/coverage-0.0.0.tgz',
+67 silly install resolved     _from: 'coverage@*' } ]
+68 info install coverage@0.0.0 into /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+69 info installOne coverage@0.0.0
+70 verbose installOne of coverage to /Users/juanmasn/Dropbox/____GITHUB/github-jsonp not in flight; installing
+71 verbose lock using /Users/juanmasn/.npm/_locks/coverage-b09f38007b7805f4.lock for /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+72 silly install write writing coverage 0.0.0 to /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+73 verbose unbuild node_modules/coverage
+74 silly gentlyRm /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage is being purged from base /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+75 verbose gentlyRm don't care about contents; nuking /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+76 verbose tar unpack /Users/juanmasn/.npm/coverage/0.0.0/package.tgz
+77 verbose tar unpacking to /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+78 silly gentlyRm /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage is being purged
+79 verbose gentlyRm don't care about contents; nuking /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+80 silly gunzTarPerm modes [ '755', '644' ]
+81 silly gunzTarPerm extractEntry
+82 silly gunzTarPerm extractEntry bin/
+83 silly gunzTarPerm extractEntry LICENSE
+84 silly gunzTarPerm extractEntry Makefile
+85 silly gunzTarPerm extractEntry package.json
+86 silly gunzTarPerm extractEntry README.markdown
+87 silly gunzTarPerm extractEntry bin/nodecoverage.js
+88 verbose write writing to /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/package.json
+89 info preinstall coverage@0.0.0
+90 verbose readDependencies loading dependencies from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/package.json
+91 verbose readDependencies loading dependencies from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/package.json
+92 silly install resolved []
+93 verbose about to build /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+94 info build /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+95 info linkStuff coverage@0.0.0
+96 silly linkStuff coverage@0.0.0 has /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules as its parent node_modules
+97 verbose linkBins coverage@0.0.0
+98 verbose link bins [ { nodecoverage: './bin/nodecoverage' },
+98 verbose link bins   '/Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/.bin',
+98 verbose link bins   false ]
+99 verbose linkMans coverage@0.0.0
+100 verbose rebuildBundles coverage@0.0.0
+101 verbose unlock done using /Users/juanmasn/.npm/_locks/coverage-b09f38007b7805f4.lock for /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+102 verbose stack Error: ENOENT, chmod '/Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/bin/nodecoverage'
+102 verbose stack     at Error (native)
+103 verbose cwd /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+104 error Darwin 15.6.0
+105 error argv "node" "/usr/local/bin/npm" "install" "coverage"
+106 error node v0.12.4
+107 error npm  v2.11.2
+108 error path /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/bin/nodecoverage
+109 error code ENOENT
+110 error errno -2
+111 error enoent ENOENT, chmod '/Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage/bin/nodecoverage'
+111 error enoent This is most likely not a problem with npm itself
+111 error enoent and is related to npm not being able to find a file.
+112 verbose exit [ -2, true ]
+113 verbose unbuild node_modules/coverage
+114 info preuninstall coverage@0.0.0
+115 info uninstall coverage@0.0.0
+116 verbose unbuild rmStuff coverage@0.0.0 from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules
+117 silly gentlyRm /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/.bin/nodecoverage is being gently removed
+118 silly gentlyRm verifying /Users/juanmasn/Dropbox/____GITHUB/github-jsonp is an npm working directory
+119 silly gentlyRm containing path /Users/juanmasn/Dropbox/____GITHUB/github-jsonp is under npm's control, in /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+120 silly gentlyRm deletion target /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/.bin/nodecoverage is under /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+121 verbose gentlyRm vacuuming from /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/.bin/nodecoverage up to /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+122 info postuninstall coverage@0.0.0
+123 silly gentlyRm /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage is being purged from base /Users/juanmasn/Dropbox/____GITHUB/github-jsonp
+124 verbose gentlyRm don't care about contents; nuking /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+125 silly vacuum-fs purging /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules/coverage
+126 silly vacuum-fs quitting because other entries in /Users/juanmasn/Dropbox/____GITHUB/github-jsonp/node_modules
