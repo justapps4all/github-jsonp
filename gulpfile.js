@@ -21,7 +21,7 @@ gulp.task('templates', function(){
 gulp.task('commit-changes', function () {
     return gulp.src('.')
         .pipe(git.add())
-        .pipe(git.commit('Date().toUTCString()'));
+        .pipe(git.commit((new Date).toUTCString()));
 });
 
 gulp.task('push-changes', function (cb) {
