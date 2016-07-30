@@ -111,6 +111,7 @@ module.exports = function(config) {
             dir: "coverage/"
         },
         plugins: [
+            'karma-sauce-launcher',
             'karma-coverage'
         ],
 
