@@ -2,7 +2,7 @@
   "name": "github-jsonp",
   "version": "0.1.0",
   "description": "GitHub minimal library with JSONP",
-  "main": "js/main.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "karma start karma.conf-sauce.js",
     "previous-test": "./node_modules/.bin/jasmine-node ./test",
