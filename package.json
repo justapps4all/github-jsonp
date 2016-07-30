@@ -6,7 +6,8 @@
   "scripts": {
     "test": "karma start karma.conf-sauce.js",
     "previous-test": "./node_modules/.bin/jasmine-node ./test",
-    "postinstall": "node sauce-install.js"
+    "postinstall": "node sauce-install.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/justapps4all/github-jsonp#readme",
   "devDependencies": {
+    "coveralls": "^2.11.12",
     "gulp": "^3.9.1",
     "gulp-copy": "0.0.2",
     "gulp-git": "^1.10.0",
