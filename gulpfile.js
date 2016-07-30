@@ -14,14 +14,14 @@ gulp.task('replace', function(){
 
 gulp.task('templates', function(){
     gulp.src(['README.md'])
-        .pipe(replace('TIMESTAMP', Date()))
+        .pipe(replace('TIMESTAMP', 'time'))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('commit-changes', function () {
     return gulp.src('.')
         .pipe(git.add())
-        .pipe(git.commit('[Prerelease] Bumped version number'));
+        .pipe(git.commit('Date().toUTCString()'));
 });
 
 gulp.task('push-changes', function (cb) {
