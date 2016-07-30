@@ -50,7 +50,7 @@ module.exports = function(config) {
         ['safari', '8.0', 'OS X 10.10'],
         ['safari', '7'],
         ['safari', '6'],
-        ['safari', '5']
+        ['safari', '5'],
 
         ['ios', '9.3'],
         ['ios', '9.2'],
