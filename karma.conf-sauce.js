@@ -1,4 +1,4 @@
-var _ = require('./');
+var _ = require('underscore');
 
 // Browsers to run on Sauce Labs platforms
 var sauceBrowsers = _.reduce([
@@ -51,14 +51,21 @@ var sauceBrowsers = _.reduce([
 }, {});
 
 module.exports = function(config) {
-    if ( !process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY ) {
-        console.log('Sauce environments not set --- Skipping');
-        return process.exit(0);
+
+    // Use ENV vars on Travis and sauce.json locally to get credentials
+    if (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY ) {
+        if (!fs.existsSync('sauce.json')) {
+            console.log('Create a sauce.json with your credentials based on the sauce-sample.json file.');
+            process.exit(1);
+        } else {
+            process.env.SAUCE_USERNAME = require('./sauce').username;
+            process.env.SAUCE_ACCESS_KEY = require('./sauce').accessKey;
+        }
     }
 
     config.set({
         basePath: '',
-        frameworks: ['qunit'],
+        frameworks: ['jasmine'],
         singleRun: true,
 
         // list of files / patterns to load in the browser
