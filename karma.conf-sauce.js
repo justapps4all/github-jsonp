@@ -63,9 +63,10 @@ module.exports = function(config) {
         // level of logging
         // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
         logLevel: config.LOG_INFO,
-
         sauceLabs: {
-            testName: 'Karma and Sauce Labs demo'
+            build: 'TRAVIS #' + process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')',
+            startConnect: true,
+            tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
         },
         captureTimeout: 120000,
         customLaunchers: customLaunchers,
@@ -76,3 +77,10 @@ module.exports = function(config) {
         singleRun: true
     });
 };
+
+/*
+ sauceLabs: {
+ testName: 'Karma and Sauce Labs demo'
+ },
+
+ */
