@@ -7,7 +7,7 @@
     "test": "karma start karma.conf-sauce.js",
     "previous-test": "./node_modules/.bin/jasmine-node ./test",
     "postinstall": "node sauce-install.js",
-    "coveralls-xxx": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "gulp-sequence": "^0.4.5",
     "jasmine-core": "^2.4.1",
     "jasmine-node": "^1.14.5",
+    "jscoverage": "^0.6.0",
     "karma": "^0.12.0",
     "karma-chrome-launcher": "^0.1.2",
     "karma-coverage": "^1.1.1",
