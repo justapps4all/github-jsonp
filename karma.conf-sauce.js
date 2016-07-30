@@ -14,8 +14,12 @@ module.exports = function(config) {
         }
     }
 
+    var tmpPlatforms = [];
+    tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
+
     // Browsers to run on Sauce Labs
-    var customLaunchers = _.reduce([
+    var customLaunchers = _.reduce( tmpPlatforms
+/*    [
         ['firefox', '47'],
         ['firefox', '46'],
         ['firefox', '35'],
@@ -57,7 +61,8 @@ module.exports = function(config) {
         ['iphone', '9.2', 'OS X 10.10'],
         ['iphone', '9.1', 'OS X 10.10'],
         ['iphone', '9.0', 'OS X 10.10']
-    ], function(memo, platform) {
+    ] */
+    , function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
         if (label.length > 1) {
@@ -68,7 +73,8 @@ module.exports = function(config) {
             'base': 'SauceLabs',
             'browserName': platform[0],
             'version': platform[1],
-            'platform': platform[2]
+            'platform': platform[2],
+            'deviceName': platform[3],
         }, Boolean);
         return memo;
     }, {});
@@ -111,7 +117,7 @@ module.exports = function(config) {
             startConnect: true,
             tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
         },
-        captureTimeout: 120000,
+        captureTimeout: 240000,
         customLaunchers: customLaunchers,
 
         // start these browsers
