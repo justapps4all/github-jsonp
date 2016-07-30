@@ -102,14 +102,18 @@ module.exports = function(config) {
         ],
 
 
+        preprocessors: {
+            'www/js/**/!(app.js)': ['coverage']
+        },
+        coverageReporter: {
+            type: 'lcov',
+            dir: 'coverage',
+            subdir: '.'
+        },
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
         reporters: ['dots', 'saucelabs', 'coverage'],
-        coverageReporter: {
-            type: "lcov",
-            dir: "coverage/"
-        },
         plugins: [
             'karma-jasmine',
             'karma-chrome-launcher',
