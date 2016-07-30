@@ -14,11 +14,14 @@ module.exports = function(config) {
         }
     }
 
-    var tmpPlatforms = [];
-    tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
+    var tmpPlatforms = [
+        ['firefox', '47']
+    ];
+    //tmpPlatforms.concat(require('./sauce-platforms').ios_9_3);
 
     // Browsers to run on Sauce Labs
-    var customLaunchers = _.reduce(
+    var customLaunchers = _.reduce(tmpPlatforms
+/*
    [
         ['firefox', '47'],
         ['firefox', '46'],
@@ -62,6 +65,7 @@ module.exports = function(config) {
         ['iphone', '9.1', 'OS X 10.10'],
         ['iphone', '9.0', 'OS X 10.10']
     ]
+    */
     , function(memo, platform) {
         // internet explorer -> ie
         var label = platform[0].split(' ');
