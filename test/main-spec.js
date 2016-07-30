@@ -1,4 +1,8 @@
-var GitHubJsonP = require('../src/main.js');
+var GitHubJsonP;
+
+require(['require', 'GitHubJsonP'], function (require) {
+    GitHubJsonP = require('GitHubJsonP');
+});
 
 describe('mymodule', function(){
 
