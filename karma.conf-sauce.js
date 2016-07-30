@@ -49,9 +49,9 @@ module.exports = function(config) {
         ['android', '4.0'],
 
         ['safari', '8.0', 'OS X 10.10'],
-        ['safari', '7', 'OS X 10.10'],
-        ['safari', '6', 'OS X 10.10'],
-        ['safari', '5', 'OS X 10.10'],
+        ['safari', '7'],
+        ['safari', '6'],
+        ['safari', '5'],
 
         ['iphone', '9.3', 'OS X 10.10'],
         ['iphone', '9.2', 'OS X 10.10'],
