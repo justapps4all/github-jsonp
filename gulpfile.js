@@ -2,15 +2,15 @@ var gulp = require('gulp');
 var replace = require('gulp-replace');
 var runSequence = require('run-sequence');
 var git = require('gulp-git');
-var rename = require('gulp-rename');
 
-gulp.task('default', function() {
-    return gulp.watch('../**/**.js', function(obj) {
-        gulp.src(['README.tmp.md'])
-            .pipe(rename('README.md'))
-            .pipe(gulp.dest('.'));
-    });
-});
+var rename = require("gulp-rename");
+
+// rename via string
+gulp.src('./README.tmp.md')
+    .pipe(rename('README.md'))
+    .pipe(gulp.dest('./')); // ./dist/main/text/ciao/goodbye.md
+
+
 gulp.task('templates', function(){
     gulp.src(['README.md'])
         .pipe(replace('TIMESTAMP', Date()))
