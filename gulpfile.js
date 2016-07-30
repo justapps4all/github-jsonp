@@ -2,18 +2,12 @@ var gulp = require('gulp');
 var replace = require('gulp-replace');
 var runSequence = require('run-sequence');
 var git = require('gulp-git');
-
 var rename = require("gulp-rename");
 
 // rename via string
 gulp.task('replace', function(){
     gulp.src('./README.tmp.md')
         .pipe(rename('README.md'))
-        .pipe(gulp.dest('./'));
-});
-
-gulp.task('templates', function(){
-    gulp.src(['README.md'])
         .pipe(replace('TIMESTAMP', Date.now()))
         .pipe(gulp.dest('./'));
 });
@@ -31,7 +25,6 @@ gulp.task('push-changes', function (cb) {
 gulp.task('default', function (callback) {
     runSequence(
         'replace',
-        'templates',
         'commit-changes',
         'push-changes',
         function (error) {
