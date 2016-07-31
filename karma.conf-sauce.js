@@ -136,7 +136,7 @@ module.exports = function(config) {
             startConnect: true,
             tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
         },
-        captureTimeout: 240000,
+        captureTimeout: 360000,
         customLaunchers: customLaunchers,
 
         // start these browsers
