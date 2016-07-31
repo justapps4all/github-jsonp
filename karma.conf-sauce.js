@@ -17,7 +17,7 @@ module.exports = function(config) {
     var tmpPlatforms = [];
 
     var others = require('./sauce-platforms');
-    tmpPlatforms = tmpPlatforms.concat(others.ios_9_3);
+    tmpPlatforms = tmpPlatforms.concat(others.min_max);
 
 
     // Browsers to run on Sauce Labs

@@ -8,5 +8,25 @@
     ["Safari", "9.3", "iOS", "iPad Simulator"],
     ["Safari", "9.3", "iOS", "iPad Retina Simulator"],
     ["Safari", "9.3", "iOS", "iPad 2 Simulator"]
+  ],
+  "min_max": [
+    ["firefox", "dev"],
+    ["firefox", "beta"],
+    ["firefox", "47"],
+    ["firefox", "4"],
+    ["chrome", "dev"],
+    ["chrome", "beta"],
+    ["chrome", "51"],
+    ["chrome", "26"],
+    ["microsoftedge", "13", "Windows 10"],
+    ["internet explorer", "11", "Windows 10"],
+    ["internet explorer", "10", "Windows 8"],
+    ["internet explorer", "9", "Windows 7"],
+    ["android", "5.1"],
+    ["android", "4.0"],
+    ["Safari", "9.3", "iOS", "iPhone Simulator"],
+    ["Safari", "7.0", "iOS", "iPhone Simulator"],
+    ["Safari", "9.3", "iOS", "iPad Simulator"],
+    ["Safari", "7.0", "iOS", "iPad Simulator"]
   ]
 }
