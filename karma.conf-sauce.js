@@ -68,12 +68,13 @@ module.exports = function(config) {
     ]
     */
     , function(memo, platform) {
-        // internet explorer -> ie
-        var label = platform[0].split(' ');
-        if (label.length > 1) {
-            label = _.invoke(label, 'charAt', 0)
+        var label;
+        if(platform.length==4){
+            label = platform[3].split(' ');
+        }else{
+            label = platform[0].split(' ');
         }
-        label = (label.join("") + '_v' + platform[1]).replace(' ', '_').toUpperCase();
+        label = (label.join("_") + '_v' + platform[1]).replace(' ', '_').toUpperCase();
         memo[label] = _.pick({
             'base': 'SauceLabs',
             'browserName': platform[0],
