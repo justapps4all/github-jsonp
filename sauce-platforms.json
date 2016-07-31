@@ -1,7 +1,13 @@
 {
   "ios_9_3": [
-    ["firefox", "46"],
-    ["firefox", "47"],
+    ["Safari", "9.3", "iOS", "iPhone Simulator"],
+    ["Safari", "9.3", "iOS", "iPhone 6 Simulator"],
+    ["Safari", "9.3", "iOS", "iPhone 6 Plus Simulator"],
+    ["Safari", "9.3", "iOS", "iPhone 5 Simulator"],
+    ["Safari", "9.3", "iOS", "iPhone 4s Simulator"],
+    ["Safari", "9.3", "iOS", "iPad Simulator"],
+    ["Safari", "9.3", "iOS", "iPad Retina Simulator"],
+    ["Safari", "9.3", "iOS", "iPad Retina Simulator"],
     ["Safari", "9.3", "iOS", "iPad 2 Simulator"]
   ]
 }
