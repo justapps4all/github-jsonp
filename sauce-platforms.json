@@ -15,7 +15,7 @@
     ["firefox", "47"],
     ["firefox", "4"],
     ["chrome", "dev"],
-    ["chrome", "beta"],
+//    ["chrome", "beta"],
     ["chrome", "51"],
     ["chrome", "26"],
     ["microsoftedge", "13", "Windows 10"],
