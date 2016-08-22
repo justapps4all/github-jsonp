@@ -10,8 +10,6 @@
     ["Safari", "9.3", "iOS", "iPad 2 Simulator"]
   ],
   "min_max": [
-    ["firefox", "dev"],
-    ["firefox", "beta"],
     ["firefox", "47"],
     ["firefox", "4"],
     ["chrome", "51"],
